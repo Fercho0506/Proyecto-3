@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.util.List;
 
 import javax.swing.JFrame;
+
+import actividades.Actividad;
 import core.Mundo;
 import learningPath.LearningPath;
 
@@ -14,6 +16,7 @@ public class VentanaPrincipalAlumno extends JFrame{
 
     private PanelListaLearningEst pLista;
     private PanelDetallesLearning pDetalles;
+    private PanelActividades actividades;
     
     public VentanaPrincipalAlumno( Mundo mundo )
     {
@@ -22,8 +25,13 @@ public class VentanaPrincipalAlumno extends JFrame{
 
         pLista = new PanelListaLearningEst( this );
         add( pLista );
-
         
+        List<Actividad> actvs= mundo.getActividades();
+        actividades= new PanelActividades(actvs);
+        add( actividades, BorderLayout.SOUTH );
+        
+        pDetalles = new PanelDetallesLearning( );
+        add( pDetalles, BorderLayout.NORTH );
 
         actualizarlearnings( );
 
