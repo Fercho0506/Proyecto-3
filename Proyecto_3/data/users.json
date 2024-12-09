@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Juan",
+    "role": "student",
+    "email": "juan@gmail.com",
+    "password": "1234"
+  },
+  {
+    "id": "2",
+    "name": "erik",
+    "role": "student",
+    "email": "ea.garciad1@uniandes.edu.co",
+    "password": "erik"
+  },
+  {
+    "id": "4",
+    "name": "profe1",
+    "role": "teacher",
+    "email": "prof1@uniandes.edu.co",
+    "password": "profe1"
+  }
+]
