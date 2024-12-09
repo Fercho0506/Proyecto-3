@@ -64,7 +64,7 @@ public class PanelListaLearning extends JPanel implements ListSelectionListener{
 	    }
 
 
-	    public void seleccionarRestaurante( LearningPath learning )
+	    public void seleccionarLearning( LearningPath learning )
 	    {
 	    	listaDeLearnings.setSelectedValue( learning, true );
 	    }
